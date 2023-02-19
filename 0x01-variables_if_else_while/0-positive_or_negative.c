@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * more headers goes there
+ *this program gets a random
+ * number everytime it execute
+ * when > zero print positive
+ * when equals zero prints zero 
+ * and when < zero negative
+ */
 int main(void)
 {
 	int n;
