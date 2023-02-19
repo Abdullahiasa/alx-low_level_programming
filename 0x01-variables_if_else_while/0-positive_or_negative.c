@@ -2,14 +2,12 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * more headers goes there
  *this program gets a random
- * number everytime it execute
- * when > zero print positive
- * when equals zero, prints zero 
- * and when < zero, negative
+ * value n everytime it execute
+ * when > zero print positive etc
  */
 int main(void)
+/*the main functions return the value of n*/
 {
 	int n;
 
@@ -22,5 +20,6 @@ int main(void)
 		printf("%d is zero\n", n);
 	else if (n < 0)
 		printf("%d is negetive\n", n);
+	/*this return the value of n*/
 	return (0);
 }
