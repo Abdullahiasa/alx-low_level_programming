@@ -6,8 +6,8 @@
  *this program gets a random
  * number everytime it execute
  * when > zero print positive
- * when equals zero prints zero 
- * and when < zero negative
+ * when equals zero, prints zero 
+ * and when < zero, negative
  */
 int main(void)
 {
