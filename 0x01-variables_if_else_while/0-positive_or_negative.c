@@ -6,8 +6,9 @@
  * value n everytime it execute
  * when > zero print positive etc
  */
-int main(void)
+
 /*the main functions return the value of n*/
+int main(void)
 {
 	int n;
 
@@ -19,7 +20,7 @@ int main(void)
 	else if (n == 0)
 		printf("%d is zero\n", n);
 	else if (n < 0)
-		printf("%d is negetive\n", n);
-	/*this return the value of n*/
+		printf("%d is negative\n", n);
 	return (0);
+	/*this return the value of n*/
 }
