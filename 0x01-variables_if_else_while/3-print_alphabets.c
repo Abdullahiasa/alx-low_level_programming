@@ -17,6 +17,5 @@ int main(void)
 		putchar(alphABET);
 
 	putchar('\n');
-	return (0);
-		
+	return (0);	
 }
