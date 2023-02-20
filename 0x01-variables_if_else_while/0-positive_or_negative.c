@@ -4,7 +4,7 @@
 /**
  *main - this asigns random number,
  *value n chages to random numb
- *Return: when it's successful 0 
+ *Return: when it's successful 0
  *when 1 it's am error
  */
 
