@@ -6,7 +6,7 @@
  * Return: 0 is success 1 is error
  */
 
-int main()
+int main(void)
 {
 	int numb = 0;
 
@@ -16,4 +16,5 @@ int main()
 		numb++;
 	}
 	putchar('\n');
+	return (0);
 }
