@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <time.h>
 /**
- *this program gets a random
- *value n everytime it execute
- *when > zero print positive etc
+ *main - this asigns random nuber, when it is invoked
+ *value n chages to random numb
+ *Return: when it's successful it is 0 
+ *when it is 1 it's am erro
  */
 
 /*the main functions return the value of n*/
