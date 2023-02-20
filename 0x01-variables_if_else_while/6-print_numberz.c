@@ -6,7 +6,7 @@
  * Return: 0 is success 1 is error
  */
 
-int main(void)
+int main()
 {
 	int numb = 0;
 
