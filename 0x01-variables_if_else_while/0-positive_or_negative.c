@@ -3,8 +3,8 @@
 #include <time.h>
 /**
  *this program gets a random
- * value n everytime it execute
- * when > zero print positive etc
+ *value n everytime it execute
+ *when > zero print positive etc
  */
 
 /*the main functions return the value of n*/
