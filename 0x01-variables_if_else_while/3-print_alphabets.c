@@ -11,11 +11,11 @@ int main(void)
 	int alphABET;
 
 	for (alphABET = 'a'; alphABET <= 'z'; alphABET++)
-	       putchar(alphABET);
+		putchar(alphABET);
 
 	for (alphABET = 'A'; alphABET <= 'Z'; alphABET++)
 		putchar(alphABET);
 
 	putchar('\n');
-	return (0);	
+	return (0);
 }
