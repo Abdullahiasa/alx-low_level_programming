@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_last_digit - this prints the last digit of an integer
+ * @numb: is a parameter
+ * Return: returns last_digit
+ */
+
 int print_last_digit(int numb)
 {
 	int last_digit = numb % 10;
