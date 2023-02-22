@@ -1,15 +1,8 @@
-#include <unistd.h>
+#include <main.h>
 /**
- * _putchar -writes character c to stout
- * main - call the function _putchar
- * @c: The character to print
- * Return: 0 is success, 1 is error
+ * main - it's print _puchar
+ * Return: 0 is success 1 is error
  */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 int main(void)
 {
