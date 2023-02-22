@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * jack)bauer - shows the time
- * @hr: is a parameter
- * @min is a parameter
+ * jack_bauer - shows the time
  */
 
 void jack_bauer(void)
