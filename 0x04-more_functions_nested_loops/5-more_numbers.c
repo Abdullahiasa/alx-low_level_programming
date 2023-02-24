@@ -1,6 +1,8 @@
 #include "main.h"
 
-/***/
+/**
+ * more_numbers - iterates 0-14 10 times
+ */
 
 void more_numbers(void)
 {
