@@ -1,5 +1,5 @@
 #include "main.h"
-  
+
 /**
  *print_diagonal - drwas a diagonal line in the terminal
  *@n: is the parameter that tells how many times the line
