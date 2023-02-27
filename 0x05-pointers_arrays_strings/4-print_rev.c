@@ -12,8 +12,8 @@ void print_rev(char *s)
 	{
 		k--;
 		j = s[i];
-		s[i] = a[k];
-		a[k] = j;
+		s[i] = s[k];
+		s[k] = j;
 	}
 
 }
