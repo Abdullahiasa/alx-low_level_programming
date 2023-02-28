@@ -7,14 +7,15 @@ void rev_string(char *s)
 {
 	int strlen = 0;
 	int temp;
+	int a = 0;
+	int b;
 
 	while (s[strlen] != '\0')
 	{
 		strlen++;
 	}
 
-	int a = 0;
-	int b = strlen - 1;
+	b = strlen - 1;
 
 	while (a < b)
 	{
