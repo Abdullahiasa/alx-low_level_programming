@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 /**
  * main - prints its name, followed by a new line.
  * @argc: represents number of comman passed.
@@ -6,8 +8,19 @@
  * Return: suucess = 0; otherwise its failure.
  */
 
-int main(int argc __attribute__((unused)), char *argv[])
-{
-	printf("%s\n", argv[0]);
-	return (0);
+int main(int argc, char *argv[]) {
+
+    char *program_name = strrchr(argv[0], '/');
+    if (program_name == NULL) 
+    {
+        program_name = argv[0];
+    } 
+    else 
+    {
+        program_name++;
+    }
+
+    printf("%s\n", program_name);
+
+    return 0;
 }
