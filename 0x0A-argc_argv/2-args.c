@@ -1,21 +1,19 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
-/***/
+/**
+ * main - prints the number of arguments passed into it.
+ * @argc: represents number of comman passed.
+ * @argv: represent command line argm passed .
+ * Return: suucess = 0; otherwise its failure.
+ */
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
+	int i;
 
-    if (argc != 3) 
-    {
-        printf("Error\n");
-        return 1;
-    }
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 
-    int a = atoi(argv[1]);
-    int b = atoi(argv[2]);
-
-    int result = a * b;
-    printf("%d\n", result);
-
-    return 0;
+	return (0);
 }
