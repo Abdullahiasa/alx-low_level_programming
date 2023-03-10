@@ -4,15 +4,14 @@
 #include <stdbool.h>
 
 /**
- * main - prints the number of arguments passed into it.
- * @argc: represents number of comman passed.
- * @argv: represent command line argm passed .
- * Return: suucess = 0; otherwise its failure.
+ * changeCoin - the logic this does all the math
+ * @i: input for calc
+ * Return: returns the length
  */
 
-int coinConverter(int i)
+int changeCoin(int i)
 {
-	int count = 0;
+	int len = 0;
 
 	while (i != 0)
 	{
@@ -34,18 +33,19 @@ int coinConverter(int i)
 		else
 			i -= 1;
 
-		count++;
+		len++;
 	}
 
-	return (count);
+	return (len);
 }
 
 /**
- * main - Takes in exactly one argument for minimum coin count
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 0 if exactly 1 argument is passed into this program, 1 otherwise
+ * main - prints the number of arguments passed into it.
+ * @argc: represents number of comman passed.
+ * @argv: represent command line argm passed .
+ * Return: suucess = 0; otherwise its failure.
  */
+
 int main(int argc, char *argv[])
 {
 	int i, coin;
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	else
 	{
-		coin = coinConverter(i);
+		coin = changeCoin(i);
 
 		printf("%d\n", coin);
 	}
