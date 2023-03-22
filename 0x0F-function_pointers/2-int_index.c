@@ -5,6 +5,7 @@
  *@array: our array goes here
  *@size: array size
  *@cmp: points to the function
+ * Return: returns 0
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
