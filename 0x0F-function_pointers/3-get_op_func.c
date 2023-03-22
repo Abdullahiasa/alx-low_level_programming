@@ -4,6 +4,7 @@
 /**
  * get_op_func - searchs for an integer
  *@s: string here
+ * Return: returns null
  */
 
 int (*get_op_func(char *s))(int a, int b)

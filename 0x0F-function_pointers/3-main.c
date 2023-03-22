@@ -7,6 +7,7 @@
  * main - searche an int value
  *@argc: arguments
  *@argv: array with arguments
+ * Return: 0
  */
 
 int main(int argc, char *argv[])

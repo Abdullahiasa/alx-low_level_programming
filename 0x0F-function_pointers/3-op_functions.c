@@ -1,6 +1,5 @@
 /**
- * add - Add 2 integers
- *
+ * op_add - Add 2 integers
  * @a: int 1
  * @b: int 2
  * Return: Integer
@@ -8,23 +7,23 @@
 
 int op_add(int a, int b)
 {
-        return (a + b);
+	return (a + b);
 }
 
 /**
- * sub - Subtract 2 integers
- *
+ * op_sub - Subtract 2 integers
  * @a: int 1
  * @b: int 2
  * Return: Integer
  */
+
 int op_sub(int a, int b)
 {
-        return (a - b);
+	return (a - b);
 }
 
 /**
- * multi - multiplies 2 integers
+ * op_mul - multiplies 2 integers
  *
  * @a: int 1
  * @b: int 2
@@ -33,12 +32,11 @@ int op_sub(int a, int b)
 
 int op_mul(int a, int b)
 {
-        return (a * b);
-
+	return (a * b);
 }
 
 /**
- * divi - divide 2 integers
+ * op_div - divide 2 integers
  *
  * @a: int 1
  * @b: int 2
@@ -47,11 +45,11 @@ int op_mul(int a, int b)
 
 int op_div(int a, int b)
 {
-        return (a / b);
+	return (a / b);
 }
 
 /**
- * remi - gives remainder division
+ * op_mod - gives remainder division
  *
  * @a: int 1
  * @b: int 2
@@ -60,5 +58,5 @@ int op_div(int a, int b)
 
 int op_mod(int a, int b)
 {
-        return (a % b);
+	return (a % b);
 }
