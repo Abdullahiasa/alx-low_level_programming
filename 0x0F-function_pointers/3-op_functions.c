@@ -3,12 +3,12 @@
  *
  * @a: int 1
  * @b: int 2
- *
  * Return: Integer
  */
-int add(int a, int b)
+
+int op_add(int a, int b)
 {
-	return (a + b);
+        return (a + b);
 }
 
 /**
@@ -16,24 +16,25 @@ int add(int a, int b)
  *
  * @a: int 1
  * @b: int 2
- *
  * Return: Integer
  */
-int sub(int a, int b)
+int op_sub(int a, int b)
 {
-	return (a - b);
+        return (a - b);
 }
+
 /**
  * multi - multiplies 2 integers
  *
  * @a: int 1
  * @b: int 2
- *
  * Return: Integer
  */
-int multi(int a, int b)
+
+int op_mul(int a, int b)
 {
-	return (a * b);
+        return (a * b);
+
 }
 
 /**
@@ -41,13 +42,12 @@ int multi(int a, int b)
  *
  * @a: int 1
  * @b: int 2
- *
  * Return: Integer
  */
 
-int divi(int a, int b)
+int op_div(int a, int b)
 {
-	return (a / b);
+        return (a / b);
 }
 
 /**
@@ -55,11 +55,10 @@ int divi(int a, int b)
  *
  * @a: int 1
  * @b: int 2
- *
  * Return: Integer
  */
 
-int remi(int a, int b)
+int op_mod(int a, int b)
 {
-	return (a % b);
+        return (a % b);
 }
