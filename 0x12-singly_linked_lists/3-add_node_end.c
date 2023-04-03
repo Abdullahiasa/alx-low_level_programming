@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+#include "list.h"
 
 /**
  * *add_node_end - add a node at the end of the  lis_t list.
