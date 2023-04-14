@@ -1,46 +1,38 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a text file and prints it to the POSIX std-output.
- * @filename: the file to open.
- * @letters: number of letters it should read and print.
- * Return: number of letters it could read and print, or 0 if:
- * - filename is NULL.
- * - the file can not be opened or read.
- * - write fails or does not write the expected amount of bytes.
+ * create_file - creates a file
+ * @filename: filename.
+ * @text_content: content writed in the file.
+ *
+ * Return: 1 if it success. -1 if it fails.
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-	int file_descriptor = -1;
-	ssize_t output = 0;
-	char *buffer;
+	int fd;
+	int nletters;
+	int rwr;
 
 	if (!filename)
-		return (0);
+		return (-1);
 
-	file_descriptor = open(filename, O_RDONLY);
-	if (file_descriptor < 0)
-		return (0);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
-	buffer = malloc(sizeof(char) * letters);
-	if (!buffer)
-	{
-		close(file_descriptor);
-		return (0);
-	}
+	if (fd == -1)
+		return (-1);
 
-	output = read(file_descriptor, buffer, letters);
-	if (output < 0)
-	{
-		free(buffer);
-		close(file_descriptor);
-		return (0);
-	}
+	if (!text_content)
+		text_content = "";
 
-	output = write(STDOUT_FILENO, buffer, output);
-	free(buffer);
-	close(file_descriptor);
-	if (output < 0)
-		return (0);
-	return (output);
+	for (nletters = 0; text_content[nletters]; nletters++)
+		;
+
+	rwr = write(fd, text_content, nletters);
+
+	if (rwr == -1)
+		return (-1);
+
+	close(fd);
+
+	return (1);
 }
